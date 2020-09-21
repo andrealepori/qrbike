@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
+
+
+/* noto-sans-jp-100 - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/noto-sans-jp-v27-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Thin'), local('NotoSansJapanese-Thin'),
+       url('../fonts/noto-sans-jp-v27-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-100.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-300 - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/noto-sans-jp-v27-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Light'), local('NotoSansJapanese-Light'),
+       url('../fonts/noto-sans-jp-v27-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-300.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-regular - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-jp-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
+       url('../fonts/noto-sans-jp-v27-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-regular.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-500 - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/noto-sans-jp-v27-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Medium'), local('NotoSansJapanese-Medium'),
+       url('../fonts/noto-sans-jp-v27-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-500.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-700 - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/noto-sans-jp-v27-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Bold'), local('NotoSansJapanese-Bold'),
+       url('../fonts/noto-sans-jp-v27-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-700.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+/* noto-sans-jp-900 - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/noto-sans-jp-v27-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans Japanese Black'), local('NotoSansJapanese-Black'),
+       url('../fonts/noto-sans-jp-v27-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-jp-v27-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-jp-v27-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-jp-v27-latin-900.svg#NotoSansJP') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: "CustomFont";
+  src: url ("CustomFont.eot");
+  src: formato url ("CustomFont.woff") ("woff"), formato
+  url ("CustomFont.otf") ("opentype"), formato
+  url ("CustomFont.svg # filename") ("svg");
+  }
+  
+  
+  .nero{
+    
+    font-style: normal;
+color: black;
+ font-size: 14px;
+
+  }
+
+  .titoli{
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+color: black;
+ font-size: 27px;
+text-align: center;
+  }
+  .subtitle{
+
+    font-family: "Sabado";
+  }
+  .yellowtitle{
+    color: #FADC15;
+  
+  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+.yellow{
+  color: #FADC15;
+}
+  
+
+
+@import "compass/css3";
+
+html, body{
+  margin:0px; padding:0px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header{
+  z-index: 1;
+  position:fixed; 
+  width:100%; 
+  height:60px; 
+  background:rgba(0,0,0,0.1);
+}
+
+header a{
+  color:white;
+  background:rgba(0,0,0,0.1); 
+  display:inline-block; 
+  padding:0px 30px; 
+  height:60px;
+  line-height:60px; 
+  text-align:center;
+  font-family: 'Roboto Slab', serif; 
+  text-decoration:none;
+  text-transform:uppercase; 
+  letter-spacing:2px; 
+  font-weight:700;
+}
+#hero1{
+ background:url(img/header.jpg);
+  background-size:cover;
+height: 900px;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+.hero, .content{
+  text-align:center; 
+  position:relative;
+  width: 100%;
+}
+
+.inner{
+height: 1000px;
+  position: relative;
+}
+
+
+
+
+.copy{
+  position:absolute; 
+  top:50%; 
+  height:10em; 
+  margin-top:-5em; 
+  width:100%;
+}
+
+.hero h1{
+  color: #FADC15;
+  font-family: Sabado;
+  font-size: 99px;}
+
+.hero p{ 
+  color: #FADC15;
+  font-family: Sabado;
+  font-size: 22px;
+}
+
+.titolo{
+  padding-left: 140px;
+  padding-top: 100px;
+color: black;
+font-family: Sabado;
+} .content p{
+  color:#333;
+}
+
+h1{
+  margin:0px;
+  font-family: 'Roboto Slab', serif;
+  font-weight:400;
+  font-size:32px;
+  padding:0px 20px;
+
+}
+
+body {
+  background: #f5f7f8;
+}
+
+.grid-1 {
+  padding-top: 40px;
+  display: grid;
+  width: 100%;
+  height: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* items */
+
+.grid-1 div {
+  
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  }
+
+/* specific item styles */
+
+.item-1 {
+  border-color: #FADC15;
+  border-style:solid;
+
+   border-width:5px;
+
+}
+.item-2 {
+  background: #33a8a5;
+
+}
+.item-3 {
+  background: #30997a;
+}
+.item-4 {
+  background: #6a478f;
+}
+.item-5 {
+  background: #da6f2b;
+}
+.item-6 {
+  background: #3d8bb1;
+}
+.item-7 {
+  background: #e03f3f;
+}
+.item-8 {
+  background: #59a627;
+}
+.item-9 {
+  background: #4464a1;
+}
+
+
+
+@import "compass/css3";
+@import "susy";
+@import "breakpoint";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+section {
+  height: 100vh;
+  &#about {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+// Breakpoints
+$xs: 0;
+$sm:576px;
+$md:768px;
+$lg:992px;
+$xl:1200px;
+// CONTAINER
+
+// Container
+.container {
+  padding: 0px 15px 0px 15px;
+  @include breakpoint($xs) {
+    @include container(auto);
+  }
+  @include breakpoint($sm) {
+    @include container(540px);
+  }
+  @include breakpoint($md) {
+    @include container(720px);
+  }
+  @include breakpoint($lg) {
+    @include container(960px);
+  }
+  @include breakpoint($xl) {
+    @include container(1170px);
+  }
+}
+
+$text-color: #000;
+
+// LINKS RESET
+a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, .8);
+  &:hover, :focus {
+    color: darken(#000, 20%);
+  }
+}
+// LINKS IN MENU EFFECT
+.menu-left a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0px;
+  transition: color .35s ease;
+  &:before {
+    content: '';
+    display:block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: $text-color;
+    transition: width .35s ease;
+  }
+  &:hover:before {
+    width: 100%;
+    background: $text-color;
+    transition: width .35s ease;
+  }
+  &:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: .5rem 0;
+  background: rgba(255, 255, 255, .92);
+  z-index: 3;
+  will-change: transform;
+  transition: background .3s,
+  -webkit-transform .5s cubic-bezier(.694,.048,.335,1);
+  transition: transform .5s cubic-bezier(.694,.048,.335,1),background .3s;
+  transition: transform .5s cubic-bezier(.694,.048,.335,1),background .3s,
+  -webkit-transform .5s cubic-bezier(.694,.048,.335,1);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  nav {
+    .logo {
+      float: left;
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      font-weight: 500;
+      color: black;
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+    }
+    ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+      li {
+        float: none;
+        margin-left: 0;
+        @include breakpoint($md) {
+          float: left;
+          margin-left: 1rem;
+        }
+        a {
+          display: block;
+        @include breakpoint($sm) {
+          display: block;
+          padding: .425rem 0rem;
+        }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  ul {
+    clear: both;
+    li {
+      padding: .5em 0;
+    }
+  }
+}
+
+.hide-nav {
+  transform: translateY(-120%!important);
+  -webkit-transform: translateY(-120%)!important;
+}
+
+ul.menu-left {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+  @include breakpoint($md) {
+    display: block!important;
+    float: right;
+    max-height: none;
+  }
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &.collapse {
+    max-height: 15em!important;
+  }
+}
+
+// Burger
+.nav-toggle {
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  float: right;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  padding: 8px 8px;
+  &.open span:first-child {
+    transform: rotate(45deg) translate(4.4px, 4.4px);
+  }
+  &.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  &.open span:last-child {
+    transform: rotate(-45deg) translate(4.4px, -4.4px);
+  }
+  @include breakpoint($md) {
+    display: none;
+  }
+  span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: $text-color;
+    transition: all .25s;
+  }
+}
+
+.signature {
+	position: fixed;
+	font-weight: 100;
+	bottom: 10px;
+  color: $text-color;
+	left: 0;
+	letter-spacing: 4px;
+	font-size: 10px;
+	width: 100vw;
+  text-align: center;
+	text-transform: uppercase;
+  text-decoration: none;
+}

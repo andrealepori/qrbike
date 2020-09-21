@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - QR BIKE</title>
+
+    
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+    
+
+  
+  <section id="hero1" class="hero">
+
+    <div class="inner">
+      <div class="copy">
+        
+      <h1 class="yellowtitle"> QR BIKE</h1>
+      <p class="subtitle">IL TUO PRIMO ACQUISTO O NOLEGGIO <br> TRAMITE QR CODE</p>
+      </div>
+    </div>
+  </section>
+  <header>
+    <div class="container">
+      <nav id="navigation">
+        <a href="#" class="logo">Jan Czizikow</a>
+        <a aria-label="mobile menu" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+          <ul class="menu-left">
+            <li><a href="#about">About</a></li>
+            <li><a href="#exp">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+<section>
+
+      <h1 class="titolo">COME NOLEGGIARE </h1>
+     
+    </div>
+    </div>
+  </section>
+  
+  
+  
+  <div class="support-grid"></div>
+
+  <section class="grid-1">
+    <div class="item-1">
+      <h1 class="titoli"><bold>STEP 1</bold> </h1>
+
+
+      <p class="nero">
+        Seleziona le date e il luogo. Si prega di prenotare con il maggior anticipo possibile, dal momento che abbiamo alta richiesta. </p>
+    </div>
+    <div class="item-2">2</div>
+    <div class="item-3">3</div>
+
+  </section>
+  
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<script>
+
+// NAVIGATION LOGO SCROLL TOP
+$('.logo').on('click', function(e) {
+  e.preventDefault();
+  $('.nav-toggle').removeClass('open');
+  $('.menu-left').removeClass('collapse');
+  $('html, body').animate({
+    scrollTop: 0
+  }, 750, 'easeInOutQuad')
+});
+// LINKS TO ANCHORS
+$('a[href^="#"]').on('click', function(event) {
+
+  var $target = $(this.getAttribute('href'));
+
+  if($target.length) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: $target.offset().top
+    }, 750, 'easeInOutQuad');
+  }
+});
+
+// TOGGLE HAMBURGER & COLLAPSE NAV
+$('.nav-toggle').on('click', function() {
+  $(this).toggleClass('open');
+  $('.menu-left').toggleClass('collapse');
+});
+// REMOVE X & COLLAPSE NAV ON ON CLICK
+$('.menu-left a').on('click', function() {
+  $('.nav-toggle').removeClass('open');
+  $('.menu-left').removeClass('collapse');
+});
+
+// SHOW/HIDE NAV
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('show-nav').addClass('hide-nav');
+        $('.nav-toggle').removeClass('open');
+        $('.menu-left').removeClass('collapse');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('hide-nav').addClass('show-nav');
+        }
+    }
+
+    lastScrollTop = st;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

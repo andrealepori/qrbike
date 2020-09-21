@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
+
+
+
+@font-face {
+  font-family: "CustomFont";
+  src: url ("CustomFont.eot");
+  src: formato url ("CustomFont.woff") ("woff"), formato
+  url ("CustomFont.otf") ("opentype"), formato
+  url ("CustomFont.svg # filename") ("svg");
+  }
+  
+  
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+.yellow{
+  color: #FADC15;
+}
+  
+
+
