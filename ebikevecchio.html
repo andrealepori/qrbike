@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLEGGIO - QR BIKE</title>
+
+
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./accordion.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700 " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap " rel="stylesheet ">
+
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700 " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap " rel="stylesheet ">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Sabado';
+        }
+        
+        .brand_name {
+            font-family: 'Sabado';
+        }
+        
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .product_wrap {
+            display: flex;
+            width: 950px;
+            margin: 100px auto;
+            justify-content: flex-start;
+            flex-flow: row wrap;
+        }
+        
+        .product_item {
+            width: 300px;
+            background: #fff;
+            margin-right: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.125);
+        }
+        
+        .product_item:last-child {
+            margin-right: 0;
+        }
+        
+        .product_item .img img {
+            width: 271px;
+            margin-bottom: 10px;
+        }
+        
+        .product_item .size_color {
+            margin: 25px 0;
+        }
+        
+        .product_item .size_color .title {
+            margin-bottom: 10px;
+        }
+        
+        .product_item .size_wrap ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .product_item .size_wrap li {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            border: 1px solid #7f8db0;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .product_item .size_wrap li span {
+            font-size: 14px;
+            font-family: 'Sabado';
+        }
+        
+        .product_item .size_wrap li:hover {
+            color: #fff;
+        }
+        
+        .product_item .price {
+            font-family: 'Sabado' font-weight: 600;
+            font-size: 20px;
+        }
+        
+        .product_item .color_wrap ul {
+            display: flex;
+            font-family: 'Sabado' justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        
+        .product_item .color_wrap ul li {
+            width: 22px;
+            font-family: 'Sabado' height: 22px;
+            background: #000;
+            margin: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .product_item .color_wrap ul li.active {
+            width: 30px;
+            height: 30px;
+            font-family: 'Sabado'
+        }
+        
+        .card {
+            background-color: dodgerblue;
+            color: white;
+            padding: 1rem;
+            font-family: 'Sabado' height: 10rem;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            display: grid;
+        }
+        
+        .card1 {
+            font-family: 'Sabado'3 background-image: url(img/ebike.jpg);
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card2 {
+            background-image: url(img/ringhiera.jpg);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card3 {
+            background-image: url(img/cross.jpg);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card4 {
+            background-image: url(img/citibikeAS.png);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .titoli {
+            color: #FADC15;
+            font-family: "Sarabun";
+            text-align: right;
+            font-size: 30px;
+        }
+        
+        .titolineri {
+            color: black;
+            font-family: "Sabado";
+            text-align: right;
+            font-size: 30px;
+        }
+        
+        .titoli1 {
+            color: #FADC15;
+            font-family: "Sabado";
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .cards {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 1rem;
+            height: 300px;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+        }
+        
+        .testodiprova {
+            display: block;
+        }
+        
+        @media screen and (max-width: 680px) {
+            #herobanner {
+                height: cover;
+                width: cover;
+                background-size: cover;
+            }
+            .cards {
+                grid-template-columns: repeat(1, minmax(300px, 1fr));
+                max-width: 1200px;
+                margin: 0 auto;
+                grid-gap: 1rem;
+                height: 300px;
+            }
+        }
+        
+        @media screen and (min-width: 400px) {}
+        /* desktop con monitor largo: più di 1200 pixel */
+        
+        @media (min-width: 1200px) {}
+        /* per device con monitor larghi da 768 a 979 pixel: tablet orizzontali o desktop */
+        /* tra 480 pixel e 767 pixel: tablet vari */
+        /* Tutto ciò che ha un monitor più piccolo di 480 pixel: telefoni */
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                color: black;
+                font-family: Sabado;
+                font-size: 9px;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+
+
+
+        <section id="herobanner" class="hero">
+
+
+            <div class="inner">
+
+
+
+            </div>
+
+        </section>
+
+
+        <h1 class="testodiprova">
+            MOUNTAIN E BIKE COLLECTION
+        </h1>
+        <div class="wrapper">
+            <div class="product_wrap">
+                <div class="product_item">
+                    <div class="img">
+                        <img src="img/mountainebike/metroeb2.jpg" alt="Round_neck">
+                        <h1 class="brand_name">RadMission
+                        </h1>
+
+                        <h5 class="brand_name"> Electric Metro Bike
+                        </h5>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#000000" data-src="img/mountainebike/metroeb1.jpg"></li>
+                                <li data-color="#000000" data-src="img/mountainebike/metroeb1.jpg"></li>
+                                <li data-color="#000000" data-src="img/mountainebike/metroeb1.jpg"></li>
+                                <li data-color="#000000" data-src="img/mountainebike/metroeb1.jpg"></li>
+                                <li data-color="#000000" data-src="img/mountainebike/metroeb1.jpg"></li>
+
+                                <li class="active" data-color="#030000" data-src="img/mountainebike/metroeb4.jpg"></li>
+                                <li data-color="#133111" data-src="img/mountainebike/metroeb2.jpg"></li>
+
+                                <li data-color="#DEDEDE" data-src="img/mountainebike/metroeb5.jpg"></li>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$€1.099,00</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/C5DUqYu.png.png" alt="Round_neck">
+                        <p class="brand_name">Mast & Harbour</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#f5d3ca" data-src="https://i.imgur.com/m6qrQtW.png"></li>
+                                <li class="active" data-color="#6c623f" data-src="https://i.imgur.com/C5DUqYu.png"></li>
+                                <li data-color="#2d2c32" data-src="https://i.imgur.com/xbOCNap.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$14</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/g6xpIKQ.png" alt="Round_neck">
+                        <p class="brand_name">Adidas</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#0a5457" data-src="https://i.imgur.com/s2PKM1j.png"></li>
+                                <li class="active" data-color="#b50a1d" data-src="https://i.imgur.com/g6xpIKQ.png"></li>
+                                <li data-color="#fe911a" data-src="https://i.imgur.com/GkBF14L.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="product_wrap">
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/vuTSHe3.png" alt="Round_neck">
+                        <p class="brand_name">H & M Round Neck</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#cab7a2" data-src="https://i.imgur.com/a31ZhsD.png"></li>
+                                <li class="active" data-color="#532e35" data-src="https://i.imgur.com/vuTSHe3.png"></li>
+                                <li data-color="#7f8cab" data-src="https://i.imgur.com/TT6hsaQ.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$12</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/C5DUqYu.png.png" alt="Round_neck">
+                        <p class="brand_name">Mast & Harbour</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#f5d3ca" data-src="https://i.imgur.com/m6qrQtW.png"></li>
+                                <li class="active" data-color="#6c623f" data-src="https://i.imgur.com/C5DUqYu.png"></li>
+                                <li data-color="#2d2c32" data-src="https://i.imgur.com/xbOCNap.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$14</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/g6xpIKQ.png" alt="Round_neck">
+                        <p class="brand_name">Adidas</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#0a5457" data-src="https://i.imgur.com/s2PKM1j.png"></li>
+                                <li class="active" data-color="#b50a1d" data-src="https://i.imgur.com/g6xpIKQ.png"></li>
+                                <li data-color="#fe911a" data-src="https://i.imgur.com/GkBF14L.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="product_wrap">
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/vuTSHe3.png" alt="Round_neck">
+                        <p class="brand_name">H & M Round Neck</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#cab7a2" data-src="https://i.imgur.com/a31ZhsD.png"></li>
+                                <li class="active" data-color="#532e35" data-src="https://i.imgur.com/vuTSHe3.png"></li>
+                                <li data-color="#7f8cab" data-src="https://i.imgur.com/TT6hsaQ.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$12</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/C5DUqYu.png.png" alt="Round_neck">
+                        <p class="brand_name">Mast & Harbour</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#f5d3ca" data-src="https://i.imgur.com/m6qrQtW.png"></li>
+                                <li class="active" data-color="#6c623f" data-src="https://i.imgur.com/C5DUqYu.png"></li>
+                                <li data-color="#2d2c32" data-src="https://i.imgur.com/xbOCNap.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$14</p>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <div class="img">
+                        <img src="https://i.imgur.com/g6xpIKQ.png" alt="Round_neck">
+                        <p class="brand_name">Adidas</p>
+                    </div>
+                    <div class="size_color">
+                        <div class="title">SIZE & COLOR</div>
+                        <div class="size_wrap">
+                            <ul>
+                                <li><span>36</span></li>
+                                <li><span>38</span></li>
+                                <li><span>40</span></li>
+                                <li><span>42</span></li>
+                            </ul>
+                        </div>
+                        <div class="color_wrap">
+                            <ul>
+                                <li data-color="#0a5457" data-src="https://i.imgur.com/s2PKM1j.png"></li>
+                                <li class="active" data-color="#b50a1d" data-src="https://i.imgur.com/g6xpIKQ.png"></li>
+                                <li data-color="#fe911a" data-src="https://i.imgur.com/GkBF14L.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>$15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </body>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+    </script>
+    <script src="./script.js"></script>
+    <script>
+        $(".color_wrap ul li").each(function(item) {
+            var color = $(this).attr("data-color");
+            $(this).css("backgroundColor", color);
+        });
+
+        $(".color_wrap ul li").each(function(item) {
+            $(this).click(function() {
+                $(this).parents(".product_item").find(".color_wrap ul li").removeClass("active");
+                $(this).addClass("active");
+                var img_src = $(this).attr("data-src");
+                $(this).parents(".product_item").find("img").attr("src", img_src);
+            });
+        })
+
+
+        (function($) {
+            $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+            $('.accordion a').click(function(j) {
+                var dropDown = $(this).closest('li').find('p');
+
+                $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).closest('.accordion').find('a.active').removeClass('active');
+                    $(this).addClass('active');
+                }
+
+                dropDown.stop(false, true).slideToggle();
+
+                j.preventDefault();
+            });
+        })(jQuery);
+    </script>
+
+</html>

@@ -1,113 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - QR BIKE</title>
+    <title>NOLEGGIO - QR BIKE</title>
 
-    
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
-	<link type="text/css" rel="stylesheet" href="css/calendario.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+
+    <link type="text/css" rel="stylesheet" href="./css/menu.css">
+
+
+
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/accordion.css">
+
 
 </head>
+
 <body>
-    
-
-  
-  <section id="hero1" class="hero">
+    <!-- partial:index.partial.html -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
 
-  
+    <style>
+        .card {
+            background-color: dodgerblue;
+            color: white;
+            padding: 1rem;
+            height: 10rem;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            display: grid;
+        }
+        
+        .card1 {
+            background-image: url(img/ebike.jpg);
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card2 {
+            background-image: url(img/ringhiera.jpg);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card3 {
+            background-image: url(img/cross.jpg);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .card4 {
+            background-image: url(img/citibikeAS.png);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+            height: 14rem;
+        }
+        
+        .titoli {
+            color: #FADC15;
+            font-family: "Sabado";
+            text-align: right;
+            font-size: 30px;
+        }
+        
+        .titolineri {
+            color: black;
+            font-family: "Sabado";
+            text-align: right;
+            font-size: 30px;
+        }
+        
+        .titoli1 {
+            color: #FADC15;
+            font-family: "Sabado";
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .cards {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 1rem;
+            height: 300px;
+            grid-template-columns: repeat(2, minmax(300px, 1fr));
+        }
+        
+        @media screen and (max-width: 680px) {
+            .cards {
+                grid-template-columns: repeat(1, minmax(300px, 1fr));
+                max-width: 1200px;
+                margin: 0 auto;
+                grid-gap: 1rem;
+                height: 300px;
+            }
+        }
+    </style>
+    </head>
 
-    
-    <div class="inner">
-      
-      <h1 class="yellowtitle"> QR BIKE</h1>
-      <p class="subtitle">IL TUO PRIMO ACQUISTO O NOLEGGIO <br> TRAMITE QR CODE</p>
-      </div>
-
-  </section>
-  
-
-  
-
-<section>
-
-      <h1 class="titolo">COME NOLEGGIARE </h1>
-     
-    </div>
-    </div>
-  </section>
-  
-  
-  
-  <div class="support-grid"></div>
-
-  <section class="grid-1">
-    <div class="item-1">
-      <h1 class="step"><bold>STEP 1</bold> </h1>
-
-
-      <p class="nero">
-        Seleziona le date e il luogo. 
-        Si prega di prenotare con il maggior anticipo possibile,
-         dal momento che abbiamo alta richiesta. </p>
-    </div>
-    <div class="item-2">
-
-      <h1 class="step"><bold>STEP 2</bold> </h1>
-
-
-      <p class="nero">
-        Seleziona il tipo di bicicletta e il modello.
-         Non tutte le bici saranno disponibili in qualsiasi luogo, se la bici scelta non è disponibile, 
-        ti suggeriremo il modello più simile.
-        </p>
-
-
-    </div>
-    <div class="item-3">
-
-  
-      <h1 class="step"><bold>STEP 3
-      </bold> </h1>
-
-
-      <p class="nero">
-        Seleziona le date e il luogo. 
-        Si prega di prenotare con il maggior anticipo possibile, 
-                dal momento che abbiamo alta richiesta.
-  
-        </p>
-
-    
-    </div>
-    
-  
+    <body>
 
 
 
+        <section id="hero2" class="hero">
+
+            <header class="global-nav">
+                <nav role="navigation" class="container">
+                    <ul class="nav-wrapper">
+                        <!-- Start Logo Section -->
+                        <li class="navsection-logo">
+
+                            </a>
+                        </li>
+                        <!-- End Logo Section -->
+                        <!-- Start Primary Section -->
+                        <li class="navsection-primary">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="chisiamo.html">CHI SIAMO </a></li>
+                                <li><a href="noleggio.html">NOLEGGIO</a></li>
+                                <li><a href="contatti.html">CONTATTI</a></li>
+                            </ul>
+
+                            <li a href="carrello.html"> <i class="fas fa-shopping-cart" a href="carrello.html"></i>
+                                <li>
+                                    <!-- End Primary Section -->
+                                    <!-- Start Mobile Section -->
+                                    <li class="navsection-mobile">
+                                        <!-- Mobile Menu Button -->
+                                        <h2>Menu</h2>
+                                        <a class="mobilemenu-wrapper" id="toggle">
+                                            <span class="bars"></span>
+                                            <span class="bars"></span>
+                                            <span class="bars"></span>
+                                        </a>
+                                        <!-- Overlay -->
+                                        <div class="overlay" id="overlay">
+                                            <div>
+                                                <ul>
+                                                    <li><a href="index.html">HOME</a></li>
+                                                    <li><a href="chisiamo.html">CHI SIAMO </a></li>
+                                                    <li><a href="noleggio.html">NOLEGGIO</a></li>
+                                                    <li><a href="contatti.html">CONTATTI</a></li>
+                                                    <li><a href="/">Konsultation</a></li>
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- End Mobile Section -->
+                                    <!-- Start Search Section -->
+
+                                    <div>
+                                    </div>
+                                </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div>
+            </div>
 
 
+            </nav>
+            <div class="inner">
+                <h1 class="yellowtitle"> QR BIKE</h1>
 
-
-
+                <h7 class="noisiamo">CHI SIAMO </h7>
+            </div>
+        </section>
 
 
 
 
+        <h1 class="titolocomenoleggiare">COME NOLEGGIARE DIRETTAMENTE SUL POSTO</h1>
+
+        <ul class="accordion">
+            <li>
+
+                <a class="active">STEP 1&nbsp;&nbsp; -&nbsp;&nbsp;INQUADRARE IL QR  </a>
+                <p style="display: block;">
+                    Con un applicazione QR.CODE inquadrare il QR della bicicletta interessata (è possibile utilizzare anche webqr al sito https://webqr.com/)
+                </p>
+            </li>
+            <li>
+                <a>STEP 2&nbsp;&nbsp; -&nbsp;&nbsp;PRENOTAZIONE DELLA BICI  </a>
+                <p>immediato accesso alle bici, prenotazione della bici per massimo 15 minuti, scan del QR Code per sbloccare da remoto il lucchetto e avviso tramite app dell’effettiva riconsegna della bici.
+                </p>
+            </li>
+            <li>
+                <a>STEP 3&nbsp;&nbsp; -&nbsp;&nbsp;PAGAMENTO E CHECKOUT</a>
+                <p>
+                    Effettuare pagamento tramite carta di credito o Paypa</p>
+            </li>
+        </ul>
+
+        <h1 class="titolocomenoleggiare">
+            VUOI NOLEGGIARE PER ESSERE SICURO DI AVERE LA TUA BIKE?
+        </h1>
+        <ul class="accordion">
+            <li>
+
+                <a>STEP 1&nbsp;&nbsp; -&nbsp;&nbsp;PRENOTAZIONE ONLINE </a>
+                <p>
+                    Seleziona le date e il luogo. Si prega di prenotare con anticipo per garantire la massima disponibilità della tua bicicletta
+
+                </p>
+            </li>
+            <li>
+                <a>STEP 2&nbsp;&nbsp; -&nbsp;&nbsp;SELEZIONA IL MODELLO   </a>
+                <p>Seleziona il tipo di bicicletta e il modello. Non tutte le bici saranno disponibili in qualsiasi luogo, se la bici scelta non è disponibile, ti suggeriremo il modello più simile. Effettua pagamento tramite carta di credito o Paypal.</p>
+            </li>
+            <li>
+                <a>STEP 3&nbsp;&nbsp; -&nbsp;&nbsp; MEMORIZZARE CODICE DI SBLOCCO</a>
+                <p>
+                    Portare con se il codice di sblocco della bicicletta da inserire sul posto ............. ............. .........
+                </p>
+            </li>
+        </ul>
+
+
+
+        <div>
+
+            <div>
+                <h1>TIPI DI BICI DA NOLEGGIARE</h1>
+
+
+                <div class="cards">
+                    <div class="card1">
+                        <h1 class="titoli">
+                            <a href="product.php" class="titoli">EBIKE</a></h1>
+                    </div>
+                    <div class="card2">
+                        <h1 class="titoli">
+                            <a href="product2.php" class="titoli">RACING BIKE</a></h1>
+                        </h1>
+                    </div>
+
+                    <div class="card3">
+                        <h1 class="titolineri" class="titoli"> CROSS BIKE </h1>
+                    </div>
+
+                    <div class="card4">
+                        <h1 class="titoli" class="titoli"> CITY BIKE</h1>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
 
 
 
 
 
 
-    
-  
-</body>
+        </div>
 
-<script src="js/calendario.js"></script>
 
+
+
+
+    </body>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        (function($) {
+            $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+            $('.accordion a').click(function(j) {
+                var dropDown = $(this).closest('li').find('p');
+
+                $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $(this).closest('.accordion').find('a.active').removeClass('active');
+                    $(this).addClass('active');
+                }
+
+                dropDown.stop(false, true).slideToggle();
+
+                j.preventDefault();
+            });
+        })(jQuery);
+    </script>
+    <script>
+        $('#toggle').click(function() {
+            $(this).toggleClass('active');
+            $('#overlay').toggleClass('open');
+        });
+    </script>
 
 </html>
